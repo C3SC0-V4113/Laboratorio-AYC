@@ -12,3 +12,6 @@ f-Strings
 
 
 """
+name="Valle"
+age=23
+f"Hola! soy {name}. Tengo {age} años de edad."
