@@ -30,7 +30,7 @@ UnionConjuntos=A.union(B)
 print("Unión de conjuntos con FiniteSet: ",UnionConjuntos)
 
 #Intersección de conjuntos:
-Interseccion=A.intersect(B)
+Interseccion=A.intersection(B)
 print("Intersección de conjuntos con FiniteSet: ",Interseccion)
 
 #Diferencia
