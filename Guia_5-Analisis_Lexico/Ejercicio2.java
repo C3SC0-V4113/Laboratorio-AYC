@@ -7,15 +7,15 @@ import java.util.regex.Pattern;
 /**
  * @author cesco_valle
  */
-public class Ejercicio1 {
+public class Ejercicio2 {
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String patron = ("(while|if|else|do)|([a-zA-Z]+)|([>|<|=|+]+)|([0-9]+)|([(|)]+)|([{|}])|(;)|([\\[|\\]])");
+        String patron = ("(while|if|else|do|for|foreach|bool|int|double|char|string)|([a-zA-Z]+)|([>|<|=|+]+)|([0-9]+)|([(|)]+)|([{|}])|(;)|([\\[|\\]])");
         // La expresión que vamos a evaluar es la siguiente:
-        String texto = "x=1; do{ if (w==1) { While(x<5) { z++; } } else{ Array[i] = 7; } }while(j==0);";
+        String texto = "x=1; do{ if (w==1) { While(x<5) { z++; } } else{ Array[i] = 7; } }while(j==0); int no=5; double des=3.5;bool flag=true; char knife='a'; string='space_jam';for (int i = 0; i < 5; i++) {i;};String[] cars = {'Volvo', 'BMW', 'Ford', 'Mazda'};for (String i : cars) {i;}";
 
         Pattern p = Pattern.compile(patron);
         Matcher matcher = p.matcher(texto);
